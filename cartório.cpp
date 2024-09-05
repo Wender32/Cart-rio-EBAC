@@ -1,4 +1,4 @@
-#include <stdio.h> //biblioteca de comunicação com o usuário
+ #include <stdio.h> //biblioteca de comunicação com o usuário
 #include <stdlib.h> //biblioteca de alocação de espaço em memória
 #include <locale.h> //biblioteca de alocações de texto por regiões
 #include <string.h> //biblioteca responsavel por cuidar das string
@@ -129,6 +129,7 @@ int main()
 		printf ("\t1 - Registrar nomes\n");
 		printf ("\t2 - Consultar nomes\n");
 		printf ("\t3 - Deletar nomes\n"); 
+		printf ("\t4 - Sair do sistema\n");
 		printf ("Opção: "); //fim do menu
 	
 		scanf("%d" , &opcao); //armazenando a escolha do usuário 
@@ -148,6 +149,11 @@ int main()
     		case 3:
     		deletar();
     		break;
+    		
+    		case 4:
+    		printf ("Obrigado por utilizar o sistema!\n");
+    		return 0;
+    		
     		
     		default:
     		printf("Esta opção não esta disponível.\n");
